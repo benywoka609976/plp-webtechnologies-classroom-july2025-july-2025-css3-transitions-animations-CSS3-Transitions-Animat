@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Card Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating particles for ambiance -->
+    <div class="particle" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="top: 20%; left: 80%; animation-delay: 1s;"></div>
+    <div class="particle" style="top: 70%; left: 20%; animation-delay: 2s;"></div>
+    <div class="particle" style="top: 80%; left: 90%; animation-delay: 3s;"></div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1 class="title">✨ Magic Card Collection ✨</h1>
+    </div>
+
+    <!-- Stats panel -->
+    <div class="stats">
+        <div>Cards Created: <span id="cardCount">3</span></div>
+        <div>Flips: <span id="flipCount">0</span></div>
+    </div>
+
+    <!-- Control buttons -->
+    <div class="controls">
+        <button class="btn btn-primary" id="addCardBtn">Add New Card</button>
+        <button class="btn btn-secondary" id="flipAllBtn">Flip All Cards</button>
+        <button class="btn btn-primary" id="shuffleBtn">Shuffle Cards</button>
+    </div>
+
+    <!-- Card container -->
+    <div class="card-container" id="cardContainer">
+        <!-- Cards will be generated dynamically by JavaScript -->
+    </div>
+
+    <!-- Loading overlay -->
+    <div class="loading" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Modal popup -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2>Card Details</h2>
+            <p id="modalText">This is a detailed view of your magic card!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
